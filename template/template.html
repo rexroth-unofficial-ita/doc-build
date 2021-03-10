@@ -2,20 +2,17 @@
 <html$if(lang)$ lang="$lang$"$endif$$if(dir)$ dir="$dir$"$endif$>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="pandoc">
 	  $for(author-meta)$<meta name="author" content="$author-meta$">$endfor$
 	  $if(date-meta)$<meta name="dcterms.date" content="$date-meta$">$endif$
 	  $if(keywords)$<meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">$endif$
     <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
-    <!-- Bootstrap core CSS -->
 
- <!-- Bootstrap core CSS -->
-  <link href="assets/vendor/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/dashboard.css" rel="stylesheet">
-  <style type="text/css">code{white-space: pre;}</style>
-  <style type="text/css">.sidebar ul{padding-left: 10px;}</style>
+	<link href="assets/vendor/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/dashboard.css" rel="stylesheet">
+	<style type="text/css">code{white-space: pre;}</style>
+	<style type="text/css">.sidebar ul{padding-left: 10px;}</style>
 
     $for(css)$
       <link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
@@ -42,17 +39,16 @@
            $if(requisiti)$
 		  <h2 id="installation">Requisiti</h2>
           <div class="row">
-				<a href="$requisiti$.pdf"> Leggere i requisiti prima di installare</a>
-
+			<a href="$requisiti$.pdf"> Leggere i requisiti prima di installare</a>
           </div>
           $endif$
 
           $parte$
-          $title$
+          <h2> $title$ </h2> 
           $description$
-          $author$
+          <!--$author$ --> 
           $licence$
-		      $body$
+		  $body$
         </div>
       </div>
     </div>
